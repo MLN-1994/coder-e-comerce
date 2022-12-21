@@ -4,7 +4,7 @@ const Header = (props) => {
     return (
         
 
-        <div className="w-full bg-yellow-300 p-4 flex justify-around shadow-md ">
+        <div className="w-full bg-yellow-300 p-4 flex justify-around shadow-md">
             <div className="">
                 <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>
             </div>
@@ -14,7 +14,10 @@ const Header = (props) => {
                     <li className="font-bold cursor-pointer text-lg">Sign up</li>
                 </ul>
             </nav>
-            <CartWidget></CartWidget>
+            <div className="hover:animate-bounce">
+                <CartWidget />
+            </div>
+            
         </div>
     )
 }

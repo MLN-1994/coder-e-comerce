@@ -1,9 +1,9 @@
 
 
-const ItemListContainer = () =>{
+const ItemListContainer = (props) =>{
     return(
-        <div className="">
-            Hola mundo 
+        <div className="flex justify-center mt-6 ">
+           <h3 className="text-xl">{ props.greeting }</h3> 
         </div>
     )
 }

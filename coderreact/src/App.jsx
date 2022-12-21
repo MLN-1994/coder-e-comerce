@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="">
       <Header/>
-      <ItemListContainer/>
+      <ItemListContainer greeting = "Hola mundo"/>
     </div>
   )
 }
