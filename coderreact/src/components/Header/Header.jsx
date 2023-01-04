@@ -1,6 +1,6 @@
 import CartWidget from "./CartWidget"
-const Header = (props) => {
-    console.log(props)
+const Header = () => {
+    
     return (
         
 
