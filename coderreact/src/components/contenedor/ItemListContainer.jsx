@@ -26,19 +26,16 @@ const ItemListContainer = () => {
   return (
     <>
       {products.map((prod) => (
-        <div className="">
-          <div className="">
-          <img src={products[0].image} alt={products.name} />
-          <h3>{products[0].name}</h3>
-          <p>{products[0].description}</p>
-          <p>${products[0].price}</p>
-          </div>
+        <div className="" key={prod.id}>
+          
+          <img src={prod.image} alt={prod.name} />
+          <h3>{prod.name}</h3>
+          <p>{prod.description}</p>
+          <p>${prod.price}</p>
+
         </div>
       ))}
-      {/* {
-      products.length > 0 && (
-       
-      )} */}
+    
     </>
   );
 };
