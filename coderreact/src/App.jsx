@@ -10,7 +10,10 @@ function App() {
   return (
     <div className="">
       <Header/>
-      <ItemListContainer greeting = "Hola mundo"/>
+      <div className="grid grid-cols-8 gap-2 m-2 p-2">
+        <ItemListContainer />
+        </div>
+      
     </div>
   )
 }

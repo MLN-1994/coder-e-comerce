@@ -1,46 +1,46 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import MockData from "../../data/MOCK_DATA.json";
 
+const ItemListContainer = () => {
+  const [products, setProducts] = useState([]);
+  console.log(products);
 
+  const requestData = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(MockData);
+      }, 1500);
+    });
+  };
 
-const ItemListContainer = (props) =>{    
-    
+  useEffect(() => {
+    requestData()
+      .then((res) => {
+        setProducts(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-    const [counter, setCounter] = useState(1)
-
-
-        const requestData = (bool) =>{
-            return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    if (bool) {
-                        resolve("Promesa resuelta campeon")
-                    } else {
-                        reject("Promesa rechazada mi rey")
-                    }
-                    
-                }, 2000);
-            })
-        }
-        
-        const handleClick = () =>{
-            setCounter(counter + 1)
-        }
-
-        requestData(true)
-            .then((res)=>{
-                console.log(res)
-            })
-            .catch((err)=>{
-                console.log(err)
-            })
-
-    return(<>
-        <div className="flex justify-center mt-6 ">
-           <h3 className="text-xl">{ props.greeting }</h3> 
-            <button  onClick={handleClick} className="bg-slate-500 p-2">click me</button>
+  return (
+    <>
+      {products.map((prod) => (
+        <div className="">
+          <div className="">
+          <img src={products[0].image} alt={products.name} />
+          <h3>{products[0].name}</h3>
+          <p>{products[0].description}</p>
+          <p>${products[0].price}</p>
+          </div>
         </div>
+      ))}
+      {/* {
+      products.length > 0 && (
        
-        </>
-    )
-}
+      )} */}
+    </>
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;
