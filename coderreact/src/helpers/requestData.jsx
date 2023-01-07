@@ -8,3 +8,20 @@ export  const requestData = () => {
       }, 1500);
     });
   };
+
+  export const requestItemId = (id) => {
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+          const item = MockData.find((el) => el.id === id)
+          if (item) {
+            resolve(item)
+          }else {
+            reject({
+              error: "no se encontro"
+            })
+          }
+
+          resolve(item)
+        }, 2000);
+    })
+  }

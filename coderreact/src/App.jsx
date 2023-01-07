@@ -2,6 +2,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import ItemListContainer from './components/contenedor/ItemListContainer'
+import ItemDetailContainer from './components/itemDetalContainer/ItemDetailContainer'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <div className="">
         <ItemListContainer />
         </div>
-      
+        <div className=""></div>
+      <ItemDetailContainer />
     </div>
   )
 }
