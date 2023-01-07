@@ -11,10 +11,7 @@ function App() {
   return (
     <div className="">
       <Header/>
-      <div className="">
         <ItemListContainer />
-        </div>
-        <div className=""></div>
       <ItemDetailContainer />
     </div>
   )
