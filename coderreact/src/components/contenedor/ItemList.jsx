@@ -10,6 +10,7 @@ const ItemList = ({ products }) => {
           <div className="" key={prod.id}>
             <img src={prod.image} alt={prod.name} />
             <h3>{prod.name}</h3>
+            <h5>{prod.category}</h5>
             
             <p>${prod.price}</p>
             <button className="p-2 border">Ver mas</button>

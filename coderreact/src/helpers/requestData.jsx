@@ -25,3 +25,29 @@ export  const requestData = () => {
         }, 2000);
     })
   }
+
+
+  export const requestByItemCategory = (category) => {
+
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+
+          const items = MockData.filter((item) => item.category === category);
+
+          if (items) {
+
+            resolve(items)
+
+          }else {
+
+            reject({
+              error: "no se encontro"
+            })
+
+          }
+
+          resolve(items);
+
+        }, 2000);
+    })
+  }
