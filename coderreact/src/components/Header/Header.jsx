@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom";
 import { requestCategories } from "../../helpers/requestData";
 import CartWidget from "./CartWidget"
 
 const Header = () => {
 
     const [categories, setCategories] = useState([]);
+
+    const navigate = useNavigate();
 
     const getCategories = () => {
 
@@ -15,6 +18,12 @@ const Header = () => {
             .catch((err) => {
                 console.log(err);
             });
+
+    }
+
+    const handleChangeCategory = (event) => {
+
+        navigate(`/category/${event.target.value}`);
 
     }
 
@@ -30,7 +39,7 @@ const Header = () => {
                 <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>
             </div>
             <div>
-                <select name="" id="">
+                <select onChange={(event) => handleChangeCategory(event)} name="" id="">
                     {
                         categories.map((category) => (
                             <option value={category}>{category}</option>

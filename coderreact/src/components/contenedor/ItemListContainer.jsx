@@ -34,7 +34,7 @@ const ItemListContainer = () => {
 
     getItems();
 
-  }, []);
+  }, [id]);
 
   return (
     <>
