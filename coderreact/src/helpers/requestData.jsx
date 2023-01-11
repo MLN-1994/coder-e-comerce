@@ -1,53 +1,81 @@
 import MockData from "../data/MOCK_DATA.json"
 
 
-export  const requestData = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(MockData);
-      }, 1500);
-    });
-  };
+export const requestData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(MockData);
+    }, 1500);
+  });
+};
 
-  export const requestItemId = (id) => {
-    return new Promise((resolve, reject) => {
-        setTimeout( () => {
-          const item = MockData.find((el) => el.id === id)
-          if (item) {
-            resolve(item)
-          }else {
-            reject({
-              error: "no se encontro"
-            })
-          }
+export const requestItemId = (id) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const item = MockData.find((el) => el.id === id)
+      if (item) {
+        resolve(item)
+      } else {
+        reject({
+          error: "no se encontro"
+        })
+      }
 
-          resolve(item)
-        }, 2000);
-    })
-  }
+      resolve(item)
+    }, 2000);
+  })
+}
 
+export const requestCategories = () => {
+
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+
+      const categories = MockData.map((item) => item.category);
+
+      const uniqueCategories = categories.filter((item, index) => categories.indexOf(item) === index);
+
+      if (uniqueCategories) {
+
+        resolve(uniqueCategories)
+
+      } else {
+
+        reject({
+          error: "no se encontro"
+        })
+
+      }
+
+      resolve(uniqueCategories);
+
+    }, 2000);
+  })
+
+}
 
   export const requestByItemCategory = (category) => {
 
     return new Promise((resolve, reject) => {
-        setTimeout( () => {
+      setTimeout(() => {
 
-          const items = MockData.filter((item) => item.category === category);
+        const items = MockData.filter((item) => item.category === category);
 
-          if (items) {
+        if (items) {
 
-            resolve(items)
+          resolve(items)
 
-          }else {
+        } else {
 
-            reject({
-              error: "no se encontro"
-            })
+          reject({
+            error: "no se encontro"
+          })
 
-          }
+        }
 
-          resolve(items);
+        resolve(items);
 
-        }, 2000);
+      }, 2000);
     })
   }
+
