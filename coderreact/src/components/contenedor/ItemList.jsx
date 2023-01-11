@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ItemList = ({ products }) => {
   return (
     <>
@@ -13,7 +15,9 @@ const ItemList = ({ products }) => {
             <h5>{prod.category}</h5>
             
             <p>${prod.price}</p>
-            <button className="p-2 border">Ver mas</button>
+            <Link to={`/item/${prod.id}`}>
+              <button className="p-2 border">Ver mas</button>
+            </Link>
           </div>
         ))}
       </section>

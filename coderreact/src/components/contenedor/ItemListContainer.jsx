@@ -8,7 +8,7 @@ const ItemListContainer = () => {
 
   const [products, setProducts] = useState([]);
 
-  const { id } = useParams();
+  const { id } = useParams(); 
 
   const getItems = async () => {
 

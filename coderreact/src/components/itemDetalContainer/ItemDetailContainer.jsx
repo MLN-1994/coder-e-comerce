@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 import { requestItemId } from "../../helpers/requestData"
 import ItemDetail from "../itemDetail/ItemDetail"
 
@@ -6,9 +7,10 @@ const ItemDetailContainer = () => {
 
     const [item, setItem] = useState(null)
     
+    const { id } = useParams();
 
     useEffect(() => {
-        requestItemId(1)
+        requestItemId(id)
         .then((data) => {
             setItem(data)
         })

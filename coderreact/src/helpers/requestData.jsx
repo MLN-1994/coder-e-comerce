@@ -12,7 +12,9 @@ export const requestData = () => {
 export const requestItemId = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const item = MockData.find((el) => el.id === id)
+      const item = MockData.find((el) => el.id == id);
+
+      console.log(item)
       if (item) {
         resolve(item)
       } else {

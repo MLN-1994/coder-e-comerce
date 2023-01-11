@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { requestCategories } from "../../helpers/requestData";
 import CartWidget from "./CartWidget"
 
@@ -36,7 +36,9 @@ const Header = () => {
 
         <div className="w-full bg-yellow-300 p-4 flex justify-around shadow-md">
             <div className="">
-                <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>
+                <Link to="/">
+                    <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>
+                </Link>
             </div>
             <div>
                 <select onChange={(event) => handleChangeCategory(event)} name="" id="">
