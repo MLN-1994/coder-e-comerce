@@ -13,16 +13,17 @@ import { useState } from "react"
     }
     
     return(
-        <div className="">
+        <div className="flex h-screen items-center justify-center">
+            <div className="w-64 border ">
             <p className="text-xl">{name}</p>
             <img src={image} alt={name} />
             <p>{description}</p>
             <p className="">Total: ${price}</p>
-            <div className="flex gap-4">
-            <button onClick={handleAddProduct} className="p-1 border">+</button>
-            <button onClick={handleRemoveProduct} className="p-1 border">-</button>
+            <div className="flex gap-2">
+            <button onClick={handleAddProduct} className="p-2  border">+</button>
+            <button onClick={handleRemoveProduct} className="p-2 border">-</button>
             </div>
-            
+            </div>
         </div>
     )
 }

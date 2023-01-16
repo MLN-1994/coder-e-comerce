@@ -41,7 +41,7 @@ const Header = () => {
                 </Link>
             </div>
             <div>
-                <select onChange={(event) => handleChangeCategory(event)} name="" id="">
+                <select className="p-2 flex  items-center" onChange={(event) => handleChangeCategory(event)} name="" id="">
                     {
                         categories.map((category) => (
                             <option value={category}>{category}</option>

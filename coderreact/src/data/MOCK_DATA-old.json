@@ -1,481 +1,82 @@
-[{
+[
+  {
     "id": 1,
-    "name": "Water - Aquafina Vitamin",
-    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 16659,
-    "stock": 13,
-    "category": "Cat1 "
-  }, {
-    "id": 2,
-    "name": "Bread - Raisin Walnut Pull",
-    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 1648,
-    "stock": 35,
-    "category": " Cat4 "
-  }, {
+    "image": "https://http2.mlstatic.com/D_Q_NP_667712-MLA46445221923_062021-AB.webp",
+    "name": "Kit teclado y mous 1",
+    "price": 9599,
+    "category": "Teclados",
+    "description": "Kit de teclado y mouse gamer Razer Cynosa Lite + Abyssus Lite Español de color negro"
+  },
+   { "id": 2,
+    "image": "https://http2.mlstatic.com/D_Q_NP_714842-MLA51838842275_102022-AB.webp",
+    "name": "Notebook Lenovo V-series",
+    "price": 9599,
+    "category": "Notebooks",
+    "description": "V15 G1 Iml Iron Gray 15.6 , Intel Core I3 10110u 8gb De Ram 1tb Hdd, Intel Uhd Graphics 1366x768px Sin So"
+  },
+  {
     "id": 3,
-    "name": "Wine - White, Ej",
-    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 4434,
-    "stock": 79,
-    "category": " Cat3 "
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_976403-MLA51364537264_082022-W.webp",
+    "name": "Pc Armada Ryzen",
+    "price": 9599,
+    "category": "PC",
+    "description": "5 5600g 6/12 Nucleos 16g "
+  },
+  {
     "id": 4,
-    "name": "Pork - Hock And Feet Attached",
-    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 9120,
-    "stock": 48,
-    "category": " Cat4 "
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_612294-MLA52221546173_102022-V.webp",
+    "name": "Auriculares Redragon Zeus",
+    "price": 9599,
+    "category": "Sonido",
+    "description": "Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida."
+  },
+  {
     "id": 5,
-    "name": "Sauerkraut",
-    "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 7320,
-    "stock": 37,
-    "category": " Cat5"
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_973781-MLA48131216539_112021-W.webp",
+    "name": "Monitor gamer Samsung F24T35 led 24",
+    "price": 9599,
+    "category": "Monitores",
+    "description": "Este monitor de 24 te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. "
+  },
+  {
     "id": 6,
-    "name": "Wine - Sawmill Creek Autumn",
-    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 4632,
-    "stock": 48,
-    "category": " Cat5"
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_754878-MLA42899391576_072020-V.webp",
+    "name": "Parlante Genius SP-HF180 negro ",
+    "price": 9599,
+    "category": "Sonido",
+    "description": "Genius SP-HF180 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme."
+  },
+  {
     "id": 7,
-    "name": "Wild Boar - Tenderloin",
-    "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 3568,
-    "stock": 31,
-    "category": " Cat5"
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_787221-MLA48007684849_102021-V.webp",
+    "name": "Smart TV Samsung Series 7 UN50AU7000GCZB LED 4K 50",
+    "price": 9599,
+    "category": "TV",
+    "description": "La cantidad de pixeles que ofrece es 4 veces mayor que la Full HD, ¿el resultado? Escenas mucho más realistas y con un nivel de detalle increíble"
+  },
+  {
     "id": 8,
-    "name": "Soup - Knorr, Chicken Noodle",
-    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 6525,
-    "stock": 49,
-    "category": " Cat5"
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_822203-MLA52221738161_102022-V.webp",
+    "name": "Notebook HP 14-dq2029la plata natural 14",
+    "price": 9599,
+    "category": "Notebooks",
+    "description": "Intel Core i5 1135G7 8GB de RAM 256GB SSD, Intel Iris Xe Graphics G7 80EUs 1366x768px Windows 10 Home"
+  },
+  {
     "id": 9,
-    "name": "Ice Cream - Turtles Stick Bar",
-    "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 15923,
-    "stock": 18,
-    "category": " Cat5"
-  }, {
+    "image": "https://http2.mlstatic.com/D_NQ_NP_746987-MLA45385615382_032021-V.webp",
+    "name": "Mouse de juego Logitech G Series Lightsync G203 negro ",
+    "price": 9599,
+    "category": "Mouse",
+    "description": "El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla."
+  },
+  {
     "id": 10,
-    "name": "Lamb - Loin Chops",
-    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 10757,
-    "stock": 84,
-    "category": " Cat4 "
-  }, {
-    "id": 11,
-    "name": "Onions - Pearl",
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 12876,
-    "stock": 79,
-    "category": " Cat5"
-  }, {
-    "id": 12,
-    "name": "Beer - Sleemans Honey Brown",
-    "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 19352,
-    "stock": 88,
-    "category": " Cat5"
-  }, {
-    "id": 13,
-    "name": "Pastry - Chocolate Marble Tea",
-    "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 7361,
-    "stock": 23,
-    "category": " Cat4 "
-  }, {
-    "id": 14,
-    "name": "Shrimp - Black Tiger 26/30",
-    "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 10382,
-    "stock": 25,
-    "category": " Cat5"
-  }, {
-    "id": 15,
-    "name": "Tea - Lemon Green Tea",
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 189,
-    "stock": 45,
-    "category": " Cat5"
-  }, {
-    "id": 16,
-    "name": "Tomatoes - Heirloom",
-    "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 14207,
-    "stock": 24,
-    "category": " Cat5"
-  }, {
-    "id": 17,
-    "name": "Yogurt - Peach, 175 Gr",
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 886,
-    "stock": 15,
-    "category": " Cat5"
-  }, {
-    "id": 18,
-    "name": "Gloves - Goldtouch Disposable",
-    "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 7802,
-    "stock": 39,
-    "category": "Cat1 "
-  }, {
-    "id": 19,
-    "name": "Wine - Red, Harrow Estates, Cab",
-    "description": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 9932,
-    "stock": 87,
-    "category": " Cat4 "
-  }, {
-    "id": 20,
-    "name": "Coffee - Frthy Coffee Crisp",
-    "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 367,
-    "stock": 60,
-    "category": " Cat5"
-  }, {
-    "id": 21,
-    "name": "Dragon Fruit",
-    "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 2029,
-    "stock": 56,
-    "category": " Cat5"
-  }, {
-    "id": 22,
-    "name": "Southern Comfort",
-    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 17966,
-    "stock": 64,
-    "category": " Cat4 "
-  }, {
-    "id": 23,
-    "name": "Wine - Red, Cooking",
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 4596,
-    "stock": 15,
-    "category": " Cat5"
-  }, {
-    "id": 24,
-    "name": "Mcguinness - Blue Curacao",
-    "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 15975,
-    "stock": 84,
-    "category": " Cat5"
-  }, {
-    "id": 25,
-    "name": "Onions - Vidalia",
-    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 513,
-    "stock": 26,
-    "category": " Cat5"
-  }, {
-    "id": 26,
-    "name": "Arctic Char - Fillets",
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 12791,
-    "stock": 30,
-    "category": " Cat5"
-  }, {
-    "id": 27,
-    "name": "Beans - Kidney, Canned",
-    "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 889,
-    "stock": 87,
-    "category": " Cat3 "
-  }, {
-    "id": 28,
-    "name": "Sugar Thermometer",
-    "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 16333,
-    "stock": 89,
-    "category": " Cat5"
-  }, {
-    "id": 29,
-    "name": "Beer - Creemore",
-    "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 112,
-    "stock": 13,
-    "category": " Cat2 "
-  }, {
-    "id": 30,
-    "name": "Crab - Blue, Frozen",
-    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 12065,
-    "stock": 83,
-    "category": " Cat4 "
-  }, {
-    "id": 31,
-    "name": "Tomatoes - Cherry",
-    "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 1415,
-    "stock": 52,
-    "category": " Cat3 "
-  }, {
-    "id": 32,
-    "name": "Flavouring - Orange",
-    "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 13196,
-    "stock": 91,
-    "category": " Cat2 "
-  }, {
-    "id": 33,
-    "name": "Pastry - Raisin Muffin - Mini",
-    "description": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 19282,
-    "stock": 98,
-    "category": " Cat4 "
-  }, {
-    "id": 34,
-    "name": "Beef - Tongue, Fresh",
-    "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 17258,
-    "stock": 66,
-    "category": " Cat4 "
-  }, {
-    "id": 35,
-    "name": "Beef - Ground Lean Fresh",
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 10253,
-    "stock": 40,
-    "category": " Cat5"
-  }, {
-    "id": 36,
-    "name": "Parsnip",
-    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 3158,
-    "stock": 52,
-    "category": " Cat5"
-  }, {
-    "id": 37,
-    "name": "Wine - Soave Folonari",
-    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 16611,
-    "stock": 27,
-    "category": " Cat4 "
-  }, {
-    "id": 38,
-    "name": "Ecolab - Medallion",
-    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 704,
-    "stock": 62,
-    "category": " Cat3 "
-  }, {
-    "id": 39,
-    "name": "Ecolab - Power Fusion",
-    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 9094,
-    "stock": 13,
-    "category": " Cat5"
-  }, {
-    "id": 40,
-    "name": "Beans - Navy, Dry",
-    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 5480,
-    "stock": 73,
-    "category": " Cat5"
-  }, {
-    "id": 41,
-    "name": "Artichoke - Bottom, Canned",
-    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 14437,
-    "stock": 61,
-    "category": " Cat5"
-  }, {
-    "id": 42,
-    "name": "Truffle Shells - Semi - Sweet",
-    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 1532,
-    "stock": 97,
-    "category": " Cat5"
-  }, {
-    "id": 43,
-    "name": "Cheese - St. Andre",
-    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 5331,
-    "stock": 57,
-    "category": " Cat4 "
-  }, {
-    "id": 44,
-    "name": "Peach - Fresh",
-    "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 10676,
-    "stock": 30,
-    "category": " Cat3 "
-  }, {
-    "id": 45,
-    "name": "Sprouts - Baby Pea Tendrils",
-    "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 11896,
-    "stock": 55,
-    "category": " Cat5"
-  }, {
-    "id": 46,
-    "name": "Tea - Herbal I Love Lemon",
-    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 5088,
-    "stock": 55,
-    "category": " Cat4 "
-  }, {
-    "id": 47,
-    "name": "Beef - Chuck, Boneless",
-    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 12964,
-    "stock": 21,
-    "category": " Cat5"
-  }, {
-    "id": 48,
-    "name": "Cake - Miini Cheesecake Cherry",
-    "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 12233,
-    "stock": 13,
-    "category": " Cat5"
-  }, {
-    "id": 49,
-    "name": "Cheese - Bocconcini",
-    "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 2028,
-    "stock": 74,
-    "category": "Cat1 "
-  }, {
-    "id": 50,
-    "name": "Tea - Black Currant",
-    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 3581,
-    "stock": 93,
-    "category": " Cat5"
-  }, {
-    "id": 51,
-    "name": "Flower - Potmums",
-    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 12334,
-    "stock": 27,
-    "category": " Cat5"
-  }, {
-    "id": 52,
-    "name": "Versatainer Nc - 888",
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 19122,
-    "stock": 44,
-    "category": " Cat5"
-  }, {
-    "id": 53,
-    "name": "Ice - Clear, 300 Lb For Carving",
-    "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 9780,
-    "stock": 39,
-    "category": " Cat4 "
-  }, {
-    "id": 54,
-    "name": "Squid - Breaded",
-    "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 19433,
-    "stock": 41,
-    "category": " Cat5"
-  }, {
-    "id": 55,
-    "name": "Sardines",
-    "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
-    "price": 4187,
-    "stock": 4,
-    "category": " Cat4 "
-  }, {
-    "id": 56,
-    "name": "Pepper - Orange",
-    "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 4605,
-    "stock": 30,
-    "category": " Cat5"
-  }, {
-    "id": 57,
-    "name": "Snails - Large Canned",
-    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 8000,
-    "stock": 24,
-    "category": " Cat4 "
-  }, {
-    "id": 58,
-    "name": "Langers - Ruby Red Grapfruit",
-    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 17478,
-    "stock": 90,
-    "category": " Cat5"
-  }, {
-    "id": 59,
-    "name": "Gooseberry",
-    "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-    "image": "http://dummyimage.com/250x200.png/5fa2dd/ffffff",
-    "price": 7978,
-    "stock": 16,
-    "category": " Cat5"
-  }, {
-    "id": 60,
-    "name": "Pepper - Cubanelle",
-    "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 14475,
-    "stock": 85,
-    "category": " Cat2 "
-  }]
+    "image": "https://http2.mlstatic.com/D_NQ_NP_648229-MLA48377926983_112021-V.webp",
+    "name": "Kit de teclado y mouse inalámbrico Logitech MK540 Español Latinoamérica de color negro ",
+    "price": 9599,
+    "category": "Teclados",
+    "description": "El combo de teclado y mouse Logitech es perfecto para ayudarte a desarrollar tus actividades diarias."
+  }
+  
+]
