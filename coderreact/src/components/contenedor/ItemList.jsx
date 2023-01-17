@@ -16,7 +16,7 @@ const ItemList = ({ products }) => {
             
             <p>${prod.price}</p>
             <Link to={`/item/${prod.id}`}>
-              <button className="p-2 border">Ver mas</button>
+              <button className="p-2 border bg-blue-400 text-white">Ver mas</button>
             </Link>
           </div>
         ))}
