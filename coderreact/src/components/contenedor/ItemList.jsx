@@ -13,10 +13,12 @@ const ItemList = ({ products }) => {
             <img src={prod.image} alt={prod.name} />
             <h3>{prod.name}</h3>
             <h5>{prod.category}</h5>
-            
+
             <p>${prod.price}</p>
             <Link to={`/item/${prod.id}`}>
-              <button className="p-2 border bg-blue-400 text-white">Ver mas</button>
+              <button className="p-2 border bg-blue-400 text-white">
+                Ver mas
+              </button>
             </Link>
           </div>
         ))}
@@ -24,4 +26,4 @@ const ItemList = ({ products }) => {
     </>
   );
 };
-export default ItemList
+export default ItemList;

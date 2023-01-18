@@ -30,5 +30,37 @@
     "price": 9120,
     "stock": 48,
     "category": "categoria3"
+  }, {
+    "id": 5,
+    "name": "Wine - White, Ej",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
+    "price": 4434,
+    "stock": 79,
+    "category": "categoria2"
+  }, {
+    "id": 6,
+    "name": "Pork - Hock And Feet Attached",
+    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
+    "price": 9120,
+    "stock": 48,
+    "category": "categoria3"
+  }, {
+    "id": 7,
+    "name": "Bread - Raisin Walnut Pull",
+    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
+    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
+    "price": 1648,
+    "stock": 35,
+    "category": "categoria1"
+  }, {
+    "id": 8,
+    "name": "Wine - White, Ej",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+    "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
+    "price": 4434,
+    "stock": 79,
+    "category": "categoria2"
   }
 ]
