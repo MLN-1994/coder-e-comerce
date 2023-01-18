@@ -12,7 +12,7 @@
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
     "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
     "price": 1648,
-    "stock": 35,
+    "stock": 24,
     "category": "categoria1"
   }, {
     "id": 3,
@@ -20,7 +20,7 @@
     "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
     "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
     "price": 4434,
-    "stock": 79,
+    "stock": 12,
     "category": "categoria2"
   }, {
     "id": 4,
@@ -28,7 +28,7 @@
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
     "image": "http://dummyimage.com/250x200.png/dddddd/000000",
     "price": 9120,
-    "stock": 48,
+    "stock": 9,
     "category": "categoria3"
   }, {
     "id": 5,
@@ -36,7 +36,7 @@
     "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
     "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
     "price": 4434,
-    "stock": 79,
+    "stock": 2,
     "category": "categoria2"
   }, {
     "id": 6,
@@ -44,7 +44,7 @@
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
     "image": "http://dummyimage.com/250x200.png/dddddd/000000",
     "price": 9120,
-    "stock": 48,
+    "stock": 16,
     "category": "categoria3"
   }, {
     "id": 7,
@@ -52,7 +52,7 @@
     "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
     "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
     "price": 1648,
-    "stock": 35,
+    "stock": 14,
     "category": "categoria1"
   }, {
     "id": 8,
@@ -60,7 +60,7 @@
     "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
     "image": "http://dummyimage.com/250x200.png/cc0000/ffffff",
     "price": 4434,
-    "stock": 79,
+    "stock": 19,
     "category": "categoria2"
   }
 ]

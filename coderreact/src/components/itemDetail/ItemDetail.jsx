@@ -3,11 +3,20 @@ import { useNavigate } from "react-router-dom";
 import ItemCount from "../itemCount/ItemCount";
 
 
-const ItemDetail = ({ id, name, description, image, price }) => {
+const ItemDetail = ({ id, name, description, image, price, stock }) => {
   const navigate = useNavigate();
   const handleBack = () => {
     navigate(-1);
   };
+
+
+  const [productCount, setProductCount] = useState(1);
+
+  const handleAddToCart = () => {
+    console.log({
+      id, name, description, image, price, stock 
+    })
+  }
 
  
   return (
@@ -27,7 +36,13 @@ const ItemDetail = ({ id, name, description, image, price }) => {
           <img src={image} alt={name} />
           <p>{description}</p>
           <p className="">Total: ${price}</p>
-          <ItemCount/>
+          <ItemCount 
+            max={stock}
+            productCount={productCount}
+            setProductCount={setProductCount}
+            handleAddToCart={handleAddToCart}
+            />
+            
         </div>
       </div>
     </>
