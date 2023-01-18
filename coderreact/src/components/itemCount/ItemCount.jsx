@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ItemCount = () => {
-  // const [amound, setAmount] = useState(1)
+  
 
   const [productCount, setProductCount] = useState(1);
 
@@ -9,7 +9,8 @@ const ItemCount = () => {
     setProductCount(productCount + 1);
   };
   const handleRemoveProduct = () => {
-    setProductCount(productCount - 1);
+    productCount > 0 && setProductCount(productCount - 1);
+    
   };
 
   return (
