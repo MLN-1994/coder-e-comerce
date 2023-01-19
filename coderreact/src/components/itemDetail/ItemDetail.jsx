@@ -1,9 +1,18 @@
+import { useContext } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 import ItemCount from "../itemCount/ItemCount";
+import { Link } from 'react-router-dom';
 
 
 const ItemDetail = ({ id, name, description, image, price, stock }) => {
+
+
+  const { addCart, isIncart} = useContext(CartContext)
+  console.log(isIncart(id));
+
+  //funcion volver, pasar a layout para que se vea en todas las pag excepto inicio
   const navigate = useNavigate();
   const handleBack = () => {
     navigate(-1);
@@ -13,9 +22,11 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
   const [productCount, setProductCount] = useState(1);
 
   const handleAddToCart = () => {
-    console.log({
+    const item = {
       id, name, description, image, price, stock 
-    })
+    }
+
+    addCart(item)
   }
 
  
@@ -36,12 +47,21 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
           <img src={image} alt={name} />
           <p>{description}</p>
           <p className="">Total: ${price}</p>
-          <ItemCount 
+
+          {
+            !isIncart(id)
+              ?
+              <ItemCount 
             max={stock}
             productCount={productCount}
             setProductCount={setProductCount}
             handleAddToCart={handleAddToCart}
             />
+              : 
+              <Link className="border " to= "/cart">Terminar compra</Link>
+          }
+
+          
             
         </div>
       </div>
