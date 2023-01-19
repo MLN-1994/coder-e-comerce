@@ -28,7 +28,7 @@ const handleSubmit = (event) =>{
 
     return(
         
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center h-screen">
             <form className="flex  flex-col w-96 " onSubmit={handleSubmit}>
                 <input className="mb-2 border" 
                 value={inputs.name}
@@ -54,7 +54,7 @@ const handleSubmit = (event) =>{
                 placeholder="Password"               
                 />
 
-                <button className="border">Send</button>
+                <button className="border">Enter</button>
             </form>
             </div>
         

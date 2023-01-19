@@ -10,6 +10,10 @@ function App() {
 
 
   return (
+
+
+    // <MyContext.Provider>
+
     <div className="">
 
 
@@ -18,11 +22,9 @@ function App() {
         <Header />
 
         <Routes>
-
           <Route exact path="/" element={<ItemListContainer />} />
           <Route exact path="/category/:id" element={<ItemListContainer />} />
           <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-          
           <Route exact path="*" element={<Navigate to={"/"}/>}/>
           <Route exact path='/contacto' element={<Contact/>}/>
         </Routes>
@@ -30,8 +32,9 @@ function App() {
 
       </BrowserRouter>
 
-    </div>
-  )
+    </div>)
+    {/* </MyContext.Provider> */}
+  
 }
 
 export default App

@@ -1,5 +1,5 @@
 
-
+//los datos provienen del componente padre itemDetail
 const ItemCount = ({max, productCount, setProductCount, handleAddToCart}) => {
   
 
