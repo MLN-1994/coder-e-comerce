@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import ItemListContainer from './components/contenedor/ItemListContainer'
 import ItemDetailContainer from './components/itemDetalContainer/ItemDetailContainer'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import Cart from './components/Cart/Cart';
 import Contact from './components/Contact/Contact';
 import {CartContext} from "./context/CartContext"
 import { useState } from 'react';
@@ -40,6 +41,7 @@ function App() {
           <Route exact path="/" element={<ItemListContainer />} />
           <Route exact path="/category/:id" element={<ItemListContainer />} />
           <Route exact path="/item/:id" element={<ItemDetailContainer />} />
+          <Route exact path='/cart' element={<Cart/>}/>
           <Route exact path="*" element={<Navigate to={"/"}/>}/>
           <Route exact path='/contacto' element={<Contact/>}/>
         </Routes>
