@@ -1,33 +1,60 @@
-import { useContext } from "react"
-import { CartContext } from "../../context/CartContext"
-
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { FaTrash } from "react-icons/fa";
 
 const Cart = () => {
-    
-    const {cart} = useContext(CartContext)
-    
-    return(
-        <div className="">
-            <p className="">Tu compra</p>
-            <hr />
+  const { cart, emptyCart, totalPriceCart, removeItem } = useContext(CartContext);
 
-            {
-                cart.map(item =>(
-                    <div className="">
-                    <div key={item.id} className="">
-                        <p className="">{item.name}</p>
-                        <img className="" src={item.image} alt="" />
-                        <p className="">Cantidad: {item.productCount}</p>
-                        <p className="">$: {item.price * item.productCount}</p>
-                    </div>
-                        <button className="p-2 border">Vaciar carrito</button>
-                    </div>
-                    
-                ))
-            }
 
+    
+    
+  return (
+    <div className="">
+      <p className="p-2 mt-2 flex justify-center font-semibold shadow-lg">
+        Tu compra
+      </p>
+
+      {cart.map((item) => (
+        <div className=" ">
+          <div key={item.id} className="">
+            <div className="grid grid-cols-12 p-2 shadow-lg  items-center ">
+              <p className="font-bold col-start-2">{item.name}</p>
+              <div className="col-start-4">
+                <img className="w-16" src={item.image} alt="" />
+              </div>
+              <div className="col-start-6">
+                <p className="font-light">Cantidad: {item.productCount}</p>
+              </div>
+              <p className="font-semibold col-start-8">
+                Total a pagar: $ {item.price * item.productCount}
+              </p>
+            <div className="col-start-12 ">
+                <button onClick={ () =>removeItem(item.id) } className="">
+                    <FaTrash className="text-2xl"/>
+                </button>
+            
+            </div>
+            </div>
+            
+          </div>
         </div>
-    )
-}
+      ))}
+      <div className="flex justify-end m-2">
+      <div className="flex flex-col ">
+        <div className="p-2 mb-6">
+            <p className="font-bold">Total: ${totalPriceCart()}</p>
+            </div>
+        
+        <div className="">
+            <button onClick={emptyCart} className="p-2 border rounded-md bg-blue-400 text-white">
+          Vaciar carrito
+            </button>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  );
+};
 
-export default Cart
+export default Cart;
