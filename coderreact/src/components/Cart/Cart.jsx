@@ -17,7 +17,7 @@ const Cart = () => {
                     <div key={item.id} className="">
                         <p className="">{item.name}</p>
                         <img className="" src={item.image} alt="" />
-                        <p className="">$: {item.price}</p>
+                        <p className="">$: {item.price * item.productCount}</p>
                     </div>
                         <button className="p-2 border">Vaciar carrito</button>
                     </div>

@@ -23,7 +23,7 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
 
   const handleAddToCart = () => {
     const item = {
-      id, name, description, image, price, stock 
+      id, name, description, image, price, stock, productCount 
     }
 
     addCart(item)
