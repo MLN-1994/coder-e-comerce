@@ -4,19 +4,21 @@ const ItemList = ({ products }) => {
   return (
     <>
       <div className="">
-        <h1 className="">Nuestros Productos</h1>
+        <p className="p-2 mt-2 flex justify-center font-semibold shadow-sm"> Nuestros productos</p>
       </div>
 
-      <section className="grid grid-cols-6 gap-4 m-2 p-2">
+      <section className="grid grid-cols-6 gap-4 m-2 mb-4 p-2">
         {products.map((prod) => (
-          <div className="shadow-lg " key={prod.id}>
-            <img src={prod.image} alt={prod.name} />
-            <h3>{prod.name}</h3>
+          <div className="shadow-lg rounded-md border p-2 " key={prod.id}>
+            <div className="w-full">
+            <img className="w-full" src={prod.image} alt={prod.name} />
+            </div>
+            <h3 className="font-bold">{prod.name}</h3>
             <h5>{prod.category}</h5>
+            <p className="font-semibold">${prod.price}</p>
 
-            <p>${prod.price}</p>
             <Link to={`/item/${prod.id}`}>
-              <button className="p-2 border bg-blue-400 text-white">
+              <button className="p-2 border bg-blue-400 text-white rounded-md">
                 Ver mas
               </button>
             </Link>

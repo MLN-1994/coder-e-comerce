@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full bg-yellow-300 p-4 flex justify-around shadow-md">
+    <div className="w-full  p-4 flex justify-around shadow-md">
       <div className="">
         <Link to="/">
           <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>

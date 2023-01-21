@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import BackButton from "../backButton/BackButton";
 import { CartContext } from "../../context/CartContext";
 import ItemCount from "../itemCount/ItemCount";
 import { Link } from 'react-router-dom';
@@ -12,11 +12,7 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
   const { addCart, isIncart} = useContext(CartContext)
   console.log(isIncart(id));
 
-  //funcion volver, pasar a layout para que se vea en todas las pag excepto inicio
-  const navigate = useNavigate();
-  const handleBack = () => {
-    navigate(-1);
-  };
+  
 
 
   const [productCount, setProductCount] = useState(1);
@@ -31,22 +27,20 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
 
  
   return (
+    
     <>
-      <div className="grid grid-cols-12 mt-4">
-        <button
-          className="p-2 border bg-blue-400 col-start-11 text-white"
-          onClick={handleBack}
-        >
-          Volver
-        </button>
-      </div>
+      <BackButton />
 
       <div className="flex h-screen items-center justify-center">
-        <div className="w-64 border ">
-          <p className="text-xl">{name}</p>
-          <img src={image} alt={name} />
-          <p>{description}</p>
-          <p className="">Total: ${price}</p>
+        <div className="w-3/12 border grid grid-cols-12 rounded-md shadow-sm">
+          <div className="col-span-12 p-4">
+            <div className="flex justify-center">
+              <p className="text-xl font-bold mb-2">{name}</p>
+              </div>
+          
+          <img className="w-screen" src={image} alt={name} />
+          <p className="">{description}</p>
+          <p className="font-bold">Total: ${price}</p>
 
           {
             !isIncart(id)
@@ -58,10 +52,12 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
             handleAddToCart={handleAddToCart}
             />
               : 
-              <Link className="border " to= "/cart">Terminar compra</Link>
+              <Link className=" " to= "/cart">
+                <button className="w-full p-2 rounded-md bg-blue-400 text-white">Finalizar compra</button>
+                </Link>
           }
 
-          
+          </div>
             
         </div>
       </div>

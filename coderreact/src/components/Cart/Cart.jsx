@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { FaTrash } from "react-icons/fa";
+import BackButton from "../backButton/BackButton";
 
 const Cart = () => {
   const { cart, emptyCart, totalPriceCart, removeItem } = useContext(CartContext);
@@ -9,13 +10,14 @@ const Cart = () => {
     
     
   return (
+    <>
+    <BackButton />
+    
     <div className="">
-      <p className="p-2 mt-2 flex justify-center font-semibold shadow-lg">
-        Tu compra
-      </p>
+      
 
       {cart.map((item) => (
-        <div className=" ">
+        <div className=" border">
           <div key={item.id} className="">
             <div className="grid grid-cols-12 p-2 shadow-lg  items-center ">
               <p className="font-bold col-start-2">{item.name}</p>
@@ -54,6 +56,7 @@ const Cart = () => {
       </div>
       </div>
     </div>
+    </>
   );
 };
 

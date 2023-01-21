@@ -11,6 +11,7 @@ export const CartProvider = ({children}) =>{
 
     const addCart = (item) =>{
       setCart([...cart, item])
+      
     }
 
     const isIncart = (id) =>{
