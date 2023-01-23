@@ -5,6 +5,7 @@ import ItemDetailContainer from "./components/itemDetalContainer/ItemDetailConta
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Contact from "./components/Contact/Contact";
+import LoginScreen from "./components/LoginScreen/LoginScreen";
 import { CartProvider } from "./context/CartContext";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/item/:id" element={<ItemDetailContainer />} />
             <Route exact path="/cart" element={<Cart />} />
             <Route exact path="*" element={<Navigate to={"/"} />} />
+            <Route exact path="/login" element={<LoginScreen/>}/>
             <Route exact path="/contacto" element={<Contact />} />
           </Routes>
         </BrowserRouter>
