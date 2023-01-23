@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
-import { LoginContext } from "../../context/LoginContext";
+import {  useState } from "react";
+import { LoginContext, useLoginContext } from "../../context/LoginContext";
 import BackButton from "../backButton/BackButton";
 
 const LoginScreen = () => {
-  const { login } = useContext(LoginContext);
+  const { login } = useLoginContext(LoginContext);
 
   const [values, setValues] = useState({
     email: "",

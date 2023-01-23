@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { createContext } from "react";
 
 
@@ -18,6 +18,13 @@ const MockUsers = [
 ]
 
 export const LoginContext = createContext()
+
+
+export const useLoginContext = () => {
+    return(
+        useContext(LoginContext)
+    )
+}
 
 export const LoginProvider = ({children})=>{
 
