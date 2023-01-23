@@ -33,15 +33,17 @@ const Header = () => {
           <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>
         </Link>
       </div>
-      <div>
+      <div className="flex justify-center items-center">
+        
         <select
-          className="p-2 flex  items-center"
+          className="bg-white p-2 rounded-md shadow-md text-gray-700 font-medium leading-5 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-50 active:text-gray-800 flex  items-center"
           onChange={(event) => handleChangeCategory(event)}
           name=""
           id=""
         >
+         
           {categories.map((category) => (
-            <option value={category}>{category}</option>
+            <option className="text-gray-700 border-no" value={category}>{category}</option>
           ))}
         </select>
       </div>

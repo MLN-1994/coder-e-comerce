@@ -32,13 +32,13 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
       <BackButton />
 
       <div className="flex h-screen items-center justify-center">
-        <div className="w-3/12 border grid grid-cols-12 rounded-md shadow-sm">
+        <div className="w-3/12 border grid grid-cols-12 rounded-md shadow-md">
           <div className="col-span-12 p-4">
             <div className="flex justify-center">
               <p className="text-xl font-bold mb-2">{name}</p>
               </div>
           
-          <img className="w-screen" src={image} alt={name} />
+          <img className="w-screen rounded-md" src={image} alt={name} />
           <p className="">{description}</p>
           <p className="font-bold">Total: ${price}</p>
 

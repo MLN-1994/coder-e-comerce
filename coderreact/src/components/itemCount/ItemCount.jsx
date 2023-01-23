@@ -23,12 +23,12 @@ const ItemCount = ({max, productCount, setProductCount, handleAddToCart}) => {
     <div className="">
 
       <div className="flex gap-1 m-2">
-        <button className="p-2  border bg-blue-400 rounded-md text-white" onClick={handleRemoveProduct}>-</button>
-        <span className="flex justify-center items-center">{productCount}</span>
-        <button className="p-2 border bg-blue-400 rounded-md text-white" onClick={handleAddProduct}>+</button>
+        <button className="flex items-center justify-center p-2 w-8 h-8 rounded-full shadow-md  border bg-blue-400 hover:bg-blue-500 text-white" onClick={handleRemoveProduct}>-</button>
+        <span className="flex justify-center items-center text-lg font-bold">{productCount}</span>
+        <button className="flex items-center justify-center p-2 w-8 h-8 rounded-full shadow-md border bg-blue-400 hover:bg-blue-500 text-white" onClick={handleAddProduct}>+</button>
       </div>
       <div >
-        <button onClick={handleAddToCart} className="p-2 border w-full bg-blue-400  text-white">Agregar al carrito</button>
+        <button onClick={handleAddToCart} className="p-4 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">Agregar al carrito</button>
       </div>
     </div>
 </>
