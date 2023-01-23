@@ -48,7 +48,7 @@ const Cart = () => {
             </div>
         
         <div className="">
-            <button onClick={emptyCart} className="p-2 border rounded-md bg-blue-400 text-white">
+            <button onClick={emptyCart} className="p-2  rounded-md bg-blue-400 hover:bg-blue-500 text-white ">
           Vaciar carrito
             </button>
         </div>

@@ -53,7 +53,7 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
             />
               : 
               <Link className=" " to= "/cart">
-                <button className="w-full p-2 rounded-md bg-blue-400 text-white">Finalizar compra</button>
+                <button className="p-4 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">Finalizar compra</button>
                 </Link>
           }
 

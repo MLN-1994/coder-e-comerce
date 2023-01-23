@@ -9,7 +9,7 @@ function BackButton() {
   return (
     <div className="grid grid-cols-12 m-2">
         <button
-          className="p-2 border bg-blue-400 col-start-11 text-white rounded-md"
+          className="p-2  bg-blue-400 hover:bg-blue-500 col-start-11 text-white rounded-md"
           onClick={handleBack}
         >
           Volver

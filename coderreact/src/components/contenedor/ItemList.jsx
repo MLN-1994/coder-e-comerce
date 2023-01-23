@@ -18,7 +18,7 @@ const ItemList = ({ products }) => {
             <p className="font-semibold">${prod.price}</p>
 
             <Link to={`/item/${prod.id}`}>
-              <button className="p-2 border bg-blue-400 text-white rounded-md">
+              <button className="p-2 border bg-blue-400 hover:bg-blue-500 text-white rounded-md">
                 Ver mas
               </button>
             </Link>
