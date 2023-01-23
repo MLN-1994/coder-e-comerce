@@ -7,26 +7,33 @@ import Cart from "./components/Cart/Cart";
 import Contact from "./components/Contact/Contact";
 import LoginScreen from "./components/LoginScreen/LoginScreen";
 import { CartProvider } from "./context/CartContext";
+import { LoginProvider } from "./context/LoginContext";
 
 function App() {
   return (
-    <CartProvider>
-      <div className="">
-        <BrowserRouter>
-          <Header />
+    <LoginProvider>
+      <CartProvider>
+        <div className="">
+          <BrowserRouter>
+            <Header />
 
-          <Routes>
-            <Route exact path="/" element={<ItemListContainer />} />
-            <Route exact path="/category/:id" element={<ItemListContainer />} />
-            <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-            <Route exact path="/cart" element={<Cart />} />
-            <Route exact path="*" element={<Navigate to={"/"} />} />
-            <Route exact path="/login" element={<LoginScreen/>}/>
-            <Route exact path="/contacto" element={<Contact />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </CartProvider>
+            <Routes>
+              <Route exact path="/" element={<ItemListContainer />} />
+              <Route
+                exact
+                path="/category/:id"
+                element={<ItemListContainer />}
+              />
+              <Route exact path="/item/:id" element={<ItemDetailContainer />} />
+              <Route exact path="/cart" element={<Cart />} />
+              <Route exact path="*" element={<Navigate to={"/"} />} />
+              <Route exact path="/login" element={<LoginScreen />} />
+              <Route exact path="/contacto" element={<Contact />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      </CartProvider>
+    </LoginProvider>
   );
 }
 
