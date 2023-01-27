@@ -51,6 +51,7 @@ console.log(user)
             logged: false,
             error: "Datos invalidos"
         })
+        alert("Datos invalidos")
     }
 
 }

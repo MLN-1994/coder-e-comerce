@@ -1,6 +1,6 @@
 import {  useState } from "react";
 import { LoginContext, useLoginContext } from "../../context/LoginContext";
-import BackButton from "../backButton/BackButton";
+
 
 const LoginScreen = () => {
   const { login } = useLoginContext(LoginContext);
@@ -25,7 +25,7 @@ const LoginScreen = () => {
 
   return (
     <>
-      <BackButton />
+     
       <div className="">
         <div className="flex flex-col justify-center items-center h-screen">
           <p className="font-bold text-lg mb-6">Loguearme</p>
@@ -55,6 +55,7 @@ const LoginScreen = () => {
             <button className="p-2 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">
               Ingresar
             </button>
+            
           </form>
         </div>
       </div>

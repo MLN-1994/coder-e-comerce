@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { requestCategories } from "../../helpers/requestData";
 import CartWidget from "./CartWidget";
+import Logout from "./Logout";
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -47,8 +48,9 @@ const Header = () => {
           ))}
         </select>
       </div>
-      <div className="hover:animate-bounce">
+      <div className="flex gap-6">
         <CartWidget />
+        <Logout/>
       </div>
     </div>
   );

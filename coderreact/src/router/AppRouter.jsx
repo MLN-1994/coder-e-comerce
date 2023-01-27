@@ -1,4 +1,3 @@
-
 import {  useLoginContext } from "../context/LoginContext";
 import Header from "../components/Header/Header";
 import ItemListContainer from "../components/contenedor/ItemListContainer";
@@ -18,10 +17,12 @@ const AppRouter = () => {
   return (
     
       <BrowserRouter>
-        {user.logged 
-        ? <>
-          <Header />
-          
+
+        {
+        user.logged ? <>
+
+            <Header />
+        
             <Routes>
               <Route exact path="/" element={<ItemListContainer />} />
               <Route exact path="/category/:id"  element={<ItemListContainer />}  />
@@ -33,9 +34,10 @@ const AppRouter = () => {
           </>
          : 
           
-            <Routes>
-              <Route exact path="/login" element={<LoginScreen />} />
-            </Routes>
+          <Routes>
+            <Route exact path="/" element={<Navigate to={"/login"} />} />
+            <Route exact path="/login" element={<LoginScreen />} />
+          </Routes>
          
         }
       </BrowserRouter>
