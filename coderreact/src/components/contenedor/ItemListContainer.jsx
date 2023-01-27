@@ -5,7 +5,7 @@ import ItemList from "../contenedor/ItemList";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
-
+  const [loading, setLoading] = useState(true)
   const { id } = useParams();
 
   const getItems = async () => {
@@ -14,20 +14,31 @@ const ItemListContainer = () => {
     request
       .then((res) => {
         setProducts(res);
+        
       })
       .catch((err) => {
         console.log(err);
-      });
+        
+      })
+      .finally(()=>{
+        setLoading(false)
+      })
   };
 
   useEffect(() => {
+    setLoading(true)
     getItems();
   }, [id]);
 
   return (
     <>
       <div>
-        <ItemList products={products} />
+        {
+          loading
+          ? <p className="text-lg">Cargando...</p>
+          :<ItemList products={products} />
+        }
+        
       </div>
     </>
   );
