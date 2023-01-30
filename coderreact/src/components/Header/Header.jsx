@@ -31,7 +31,7 @@ const Header = () => {
     <div className="w-full  p-4 flex justify-around shadow-md">
       <div className="">
         <Link to="/">
-          <h1 className="text-3xl font-bold tracking-[.25em]">Mercado Flaco</h1>
+          <h1 className="text-3xl font-bold tracking-[.25em] shadow-sm">Mercado Flaco</h1>
         </Link>
       </div>
       <div className="flex justify-center items-center">
