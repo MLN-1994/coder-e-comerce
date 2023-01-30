@@ -6,7 +6,18 @@ import BackButton from "../backButton/BackButton";
 const Cart = () => {
   const { cart, emptyCart, totalPriceCart, removeItem } = useContext(CartContext);
 
-
+if (cart.length === 0) {
+    return(<>
+    <div className="">
+      <BackButton />
+      </div>
+      <div className="flex justify-center">
+      <p className="text-xl font-bold  mt-6">Carrito vacio</p>
+      </div>
+      
+      </>
+    )
+}
     
     
   return (
