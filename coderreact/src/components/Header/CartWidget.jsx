@@ -14,7 +14,7 @@ const CartWidget = () => {
         </Link>
         <div
           className={`absolute top-3.5 right-6 w-6 rounded-full flex justify-center ${
-            showCartNumber() > 0 ? "bg-red-600" : "bg-blue-400"
+            showCartNumber() > 0 ? "bg-red-600 animate-bounce" : "bg-blue-400"
           }`}
         >
           <span className=" text-white ">{showCartNumber()}</span>
@@ -25,3 +25,5 @@ const CartWidget = () => {
 };
 
 export default CartWidget;
+
+
