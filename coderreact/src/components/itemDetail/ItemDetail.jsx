@@ -37,8 +37,10 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
             <div className="flex justify-center">
               <p className="text-xl font-bold mb-2">{name}</p>
               </div>
+          <div className="flex justify-center items-center">
+            <img className="rounded-md" src={image} alt={name} />
+            </div>
           
-          <img className="w-screen rounded-md" src={image} alt={name} />
           <p className="">{description}</p>
           <p className="font-bold">Total: ${price}</p>
 

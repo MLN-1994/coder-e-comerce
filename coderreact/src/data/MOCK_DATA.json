@@ -1,17 +1,17 @@
 [{
     "id": 1,
-    "name": "Water - Aquafina Vitamin",
-    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-    "image": "http://dummyimage.com/250x200.png/dddddd/000000",
-    "price": 16659,
+    "name": "Samsung Galaxy S20",
+    "description": "Memoria interna de 128GB. Resistente al agua",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_737081-MLA52383198353_112022-V.webp",
+    "price":  185.999,
     "stock": 13,
     "category": "categoria1"
   }, {
     "id": 2,
-    "name": "Bread - Raisin Walnut Pull",
-    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "image": "http://dummyimage.com/250x200.png/ff4444/ffffff",
-    "price": 1648,
+    "name": "Samsung Galaxy A03",
+    "description": "Pantalla PLS de 6.5 Cámara delantera de 5Mpx. Procesador Unisoc SC9863A Octa-Core de 1.6GHz con 2GB de RAM. Batería de 5000mAh.  Memoria interna de 32GB.",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_892460-MLA52817429394_122022-V.webp",
+    "price": 41.999,
     "stock": 24,
     "category": "categoria1"
   }, {
