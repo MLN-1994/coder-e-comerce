@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { requestItemId } from "../../helpers/requestData"
 import ItemDetail from "../itemDetail/ItemDetail"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../../firebase/config"

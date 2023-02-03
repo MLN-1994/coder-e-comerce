@@ -7,9 +7,9 @@ const ItemList = ({ products }) => {
         <p className="p-2 mt-2 flex justify-center font-semibold shadow-sm"> Nuestros productos</p>
       </div>
 
-      <section className="grid grid-cols-6 gap-4 m-2 mb-4 p-2">
+      <section className="grid grid-cols-6 gap-4 m-2 mb-4 p-2 bg-neutral-50">
         {products.map((prod) => (
-          <div className="shadow-lg rounded-md border p-2 " key={prod.id}>
+          <div className="shadow-lg rounded-md border p-2 bg-white" key={prod.id}>
             <div className="w-full flex justify-center items-center">
             <img className="" src={prod.image} alt={prod.name} />
             </div>

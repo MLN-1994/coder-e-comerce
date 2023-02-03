@@ -6,8 +6,8 @@ const LoginScreen = () => {
   const { login } = useLoginContext(LoginContext);
 
   const [values, setValues] = useState({
-    email: "",
-    password: "",
+    email: "marianolangge@gmail.com",
+    password: "hola",
   });
 
   const handleInputChange = (e) => {
