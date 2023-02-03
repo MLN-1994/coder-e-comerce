@@ -43,7 +43,7 @@ const Header = () => {
           id=""
         >
          
-         <option disabled={true}>Seleccionar categoria</option>
+         <option disabled={true} >Seleccionar categoria</option>
           {categories.map((category) => (
             <option className="text-gray-700 border-no" value={category}>{category}</option>
           ))}
