@@ -7,6 +7,7 @@ import Cart from "../components/Cart/Cart";
 import Contact from "../components/Contact/Contact";
 import LoginScreen from "../components/LoginScreen/LoginScreen";
 import RegisterScreen from "../components/RegisterScreen/RegisterScreen";
+import Checkout from "../components/Checkout/Checkout"
 
 const AppRouter = () => {
 
@@ -29,6 +30,7 @@ const AppRouter = () => {
               <Route exact path="/category/:id"  element={<ItemListContainer />}  />
               <Route exact path="/item/:id" element={<ItemDetailContainer />} />
               <Route exact path="/cart" element={<Cart />} />
+              <Route exact path="/checkout" element={<Checkout />} />
               <Route exact path="*" element={<Navigate to={"/"} />} />
               <Route exact path="/contacto" element={<Contact />} />
             </Routes>

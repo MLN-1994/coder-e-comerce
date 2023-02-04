@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { FaTrash } from "react-icons/fa";
 import BackButton from "../backButton/BackButton";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, emptyCart, totalPriceCart, removeItem } =
@@ -54,13 +55,14 @@ const Cart = () => {
               <p className="font-bold">Total: ${totalPriceCart()}</p>
             </div>
 
-            <div className="">
+            <div className="flex gap-3">
               <button
                 onClick={emptyCart}
                 className="p-2  rounded-md bg-blue-400 hover:bg-blue-500 text-white "
               >
                 Vaciar carrito
               </button>
+              <Link to="/checkout" className="p-2  rounded-md bg-blue-400 hover:bg-blue-500 text-white ">Ir a pagar</Link>
             </div>
           </div>
         </div>
