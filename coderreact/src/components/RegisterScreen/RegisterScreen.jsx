@@ -1,14 +1,14 @@
 import {  useState } from "react";
-import { LoginContext, useLoginContext } from "../../context/LoginContext";
 import { Link } from "react-router-dom";
+import { LoginContext, useLoginContext } from "../../context/LoginContext";
 
 
-const LoginScreen = () => {
-  const { login } = useLoginContext(LoginContext);
+const RegisterScreen = () => {
+  const {  register } = useLoginContext(LoginContext);
 
   const [values, setValues] = useState({
-    email: "marianolangge@gmail.com",
-    password: "hola",
+    email: "",
+    password: "",
   });
 
   const handleInputChange = (e) => {
@@ -21,7 +21,7 @@ const LoginScreen = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    login(values);
+    register(values);
   };
 
   return (
@@ -29,7 +29,7 @@ const LoginScreen = () => {
      
       <div className="">
         <div className="flex flex-col justify-center items-center h-screen">
-          <p className="font-bold text-lg mb-6">Loguearme</p>
+          <p className="font-bold text-lg mb-6">Registrarme</p>
           <form
             className="flex flex-col gap-4"
             onSubmit={handleSubmit}
@@ -58,12 +58,13 @@ const LoginScreen = () => {
             </button>
             
           </form>
-          <Link to={"/register"}>
-            <p className="text-blue-500 font-semibold p-2">Crea tu cuenta</p>
+
+          <Link to={"/login"}>
+            <p className="text-blue-500 font-semibold p-2">Ya tengo una cuenta</p> 
           </Link>
         </div>
       </div>
     </>
   );
 };
-export default LoginScreen;
+export default RegisterScreen;

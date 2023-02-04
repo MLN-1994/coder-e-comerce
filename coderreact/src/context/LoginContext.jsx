@@ -1,72 +1,79 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { createContext } from "react";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+import { auth } from "../firebase/config";
 
-
-const MockUsers = [
-    {
-        email: "marianolangge@gmail.com",
-        password: "hola"
-    },
-    {
-        email: "franlangge@gmail.com",
-        password: "hermano"
-    },
-    {
-        email: "catalangge@gmail.com",
-        password: "hermana"
-    },
-]
-
-export const LoginContext = createContext()
-
+export const LoginContext = createContext();
 
 export const useLoginContext = () => {
-    return(
-        useContext(LoginContext)
-    )
-}
+  return useContext(LoginContext);
+};
 
-export const LoginProvider = ({children})=>{
+export const LoginProvider = ({ children }) => {
+  const [user, setUser] = useState({
+    email: null,
+    logged: false,
+    error: null,
+  });
 
-    const [user, setUser] = useState({
-        email: "",
+  const login = (values) => {
+    signInWithEmailAndPassword(auth, values.email, values.password).catch(
+      (error) => {
+        console.log(error);
+        setUser({
+          email: null,
+          logged: false,
+          error: error.message,
+        });
+      }
+    );
+  };
+
+  const logout = () => {
+    signOut(auth).then(() => {
+      setUser({
+        email: null,
         logged: false,
-        error: null
-    })
-    
+        error: null,
+      });
+    });
+  };
 
-const login = (values)=>{
-    const match = MockUsers.find(user => user.email === values.email && user.password === values.password)
-console.log(user)
-    if(match){
+  const register = (values) => {
+    createUserWithEmailAndPassword(auth, values.email, values.password).catch(
+      (error) => {
+        console.log(error);
         setUser({
-            email : match.email,
-            logged : true,
-            error: null,
-            
-        })
-    }else{
+          email: null,
+          logged: false,
+          error: error.message,
+        });
+      }
+    );
+  };
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
         setUser({
-            email: null,
-            logged: false,
-            error: "Datos invalidos"
-        })
-        alert("Datos invalidos")
-    }
+          email: user.email,
+          logged: true,
+          error: null,
+        });
+      } else {
+        logout();
+      }
+    });
+  }, []);
 
-}
-
-    const logout = () =>{
-        setUser({
-            email: "",
-        logged: false,
-        error: null
-        })
-    }
-
-    return(
-        <LoginContext.Provider value={{user, login, logout}}>
-            {children}
-        </LoginContext.Provider>
-    )
-}
+  return (
+    <LoginContext.Provider value={{ user, login, logout, register }}>
+      {children}
+    </LoginContext.Provider>
+  );
+};

@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Cart from "../components/Cart/Cart";
 import Contact from "../components/Contact/Contact";
 import LoginScreen from "../components/LoginScreen/LoginScreen";
+import RegisterScreen from "../components/RegisterScreen/RegisterScreen";
 
 const AppRouter = () => {
 
@@ -36,6 +37,7 @@ const AppRouter = () => {
           
           <Routes>
             <Route exact path="/" element={<Navigate to={"/login"} />} />
+            <Route exact path="/register" element={<RegisterScreen/>}/>
             <Route exact path="/login" element={<LoginScreen />} />
           </Routes>
          
