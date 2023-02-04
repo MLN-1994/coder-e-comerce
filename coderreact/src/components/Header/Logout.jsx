@@ -1,21 +1,16 @@
+import { useLoginContext } from "../../context/LoginContext";
+import { RiLogoutBoxFill } from "react-icons/ri";
 
-import { useLoginContext } from "../../context/LoginContext"
-import { RiLogoutBoxFill } from 'react-icons/ri';
+const Logout = () => {
+  const { logout } = useLoginContext();
 
-
-const Logout = () =>{
-
-    const {logout}= useLoginContext()
-
-
-    return(
-        <div className="">
-           <a href="" onClick={logout}>
-            <RiLogoutBoxFill className="text-4xl cursor-pointer"/>
-            </a>
-            
-        </div>
-    )
-}
+  return (
+    <div className="">
+      <a href="" onClick={logout}>
+        <RiLogoutBoxFill className="text-4xl cursor-pointer" />
+      </a>
+    </div>
+  );
+};
 
 export default Logout;

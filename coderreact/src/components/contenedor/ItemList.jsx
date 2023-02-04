@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 const ItemList = ({ products }) => {
   return (
     <>
-    
-
       <section className="grid grid-cols-6 gap-4 m-2 mb-4 p-2 bg-neutral-50">
         {products.map((prod) => (
           <div

@@ -5,7 +5,6 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  
 } from "firebase/auth";
 import { auth } from "../firebase/config";
 
@@ -22,22 +21,20 @@ export const LoginProvider = ({ children }) => {
     error: null,
   });
 
+  //   const googleLogin = () =>{
+  //     signInWithPopup(auth, provider)
+  //     .catch(
+  //         (error) => {
+  //           console.log(error);
+  //           setUser({
+  //             email: null,
+  //             logged: false,
+  //             error: error.message,
+  //           });
+  //         }
+  //       );
 
-//   const googleLogin = () =>{
-//     signInWithPopup(auth, provider)
-//     .catch(
-//         (error) => {
-//           console.log(error);
-//           setUser({
-//             email: null,
-//             logged: false,
-//             error: error.message,
-//           });
-//         }
-//       );
-    
-//   }
-
+  //   }
 
   const login = (values) => {
     signInWithEmailAndPassword(auth, values.email, values.password).catch(
@@ -90,7 +87,7 @@ export const LoginProvider = ({ children }) => {
   }, []);
 
   return (
-    <LoginContext.Provider value={{ user, login, logout, register,  }}>
+    <LoginContext.Provider value={{ user, login, logout, register }}>
       {children}
     </LoginContext.Provider>
   );

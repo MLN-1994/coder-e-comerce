@@ -62,7 +62,12 @@ const Cart = () => {
               >
                 Vaciar carrito
               </button>
-              <Link to="/checkout" className="p-2  rounded-md bg-blue-400 hover:bg-blue-500 text-white ">Ir a pagar</Link>
+              <Link
+                to="/checkout"
+                className="p-2  rounded-md bg-blue-400 hover:bg-blue-500 text-white "
+              >
+                Ir a pagar
+              </Link>
             </div>
           </div>
         </div>

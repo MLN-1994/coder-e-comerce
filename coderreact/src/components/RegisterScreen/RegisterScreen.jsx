@@ -1,10 +1,9 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { LoginContext, useLoginContext } from "../../context/LoginContext";
 
-
 const RegisterScreen = () => {
-  const {  register } = useLoginContext(LoginContext);
+  const { register } = useLoginContext(LoginContext);
 
   const [values, setValues] = useState({
     email: "",
@@ -26,7 +25,6 @@ const RegisterScreen = () => {
 
   return (
     <>
-     
       <div className="">
         <div className="flex flex-col justify-center items-center h-screen">
           <p className="font-bold text-lg mb-6">Registrarme</p>
@@ -56,11 +54,12 @@ const RegisterScreen = () => {
             <button className="p-2 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">
               Ingresar
             </button>
-            
           </form>
 
           <Link to={"/login"}>
-            <p className="text-blue-500 font-semibold p-2 underline">Ya tengo una cuenta</p> 
+            <p className="text-blue-500 font-semibold p-2 underline">
+              Ya tengo una cuenta
+            </p>
           </Link>
         </div>
       </div>

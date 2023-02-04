@@ -1,8 +1,6 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { LoginContext, useLoginContext } from "../../context/LoginContext";
 import { Link } from "react-router-dom";
-
-
 
 const LoginScreen = () => {
   const { login } = useLoginContext(LoginContext);
@@ -27,7 +25,6 @@ const LoginScreen = () => {
 
   return (
     <>
-     
       <div className="">
         <div className="flex flex-col justify-center items-center h-screen">
           <p className="font-bold text-lg mb-6">Loguearme</p>
@@ -57,14 +54,15 @@ const LoginScreen = () => {
             <button className="p-2 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">
               Ingresar
             </button>
-            
           </form>
 
           {/* <button onClick={googleLogin} className="p-2 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">
               Ingresar con Google
             </button> */}
           <Link to={"/register"}>
-            <p className="text-blue-500 font-semibold p-2 underline">Crea tu cuenta</p>
+            <p className="text-blue-500 font-semibold p-2 underline">
+              Crea tu cuenta
+            </p>
           </Link>
         </div>
       </div>
