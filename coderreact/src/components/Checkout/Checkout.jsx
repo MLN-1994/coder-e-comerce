@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { useCartContext } from "../../context/CartContext"
-import { Navigate } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 import { db } from "../../firebase/config"
 import { collection, addDoc } from "firebase/firestore"
 
 
 const Checkout = () =>{
-    const {cart, totalPriceCart} = useCartContext()
-    
+    const {cart, totalPriceCart, emptyCart} = useCartContext()
+    const [orderId, setOrderId] = useState(null)
     const [values, setValues] = useState({
         nombre: "",
         direccion: "",
@@ -40,9 +40,22 @@ const Checkout = () =>{
         const ordersRef = collection(db, "orders")
 
         addDoc(ordersRef, order)
-        .then((doc) => console.log(doc.id))
+        .then((doc) => {
+            setOrderId(doc.id)
+            emptyCart()
+        })
         .catch((error)=> console.log(error))
 
+    }
+
+    if(orderId){
+        return(
+            <div className="h-screen flex flex-col justify-center items-center gap-4">
+                <p className="text-xl font-bold">Gracias por tu compra! </p>
+                <p className="">Tu codigo de compra es: <span className="text-red-500">{orderId}</span></p>
+                <Link className="p-2  rounded-md bg-blue-400 hover:bg-blue-500 text-white " to="/">Volver</Link>
+            </div>
+        )
     }
 
 
