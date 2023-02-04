@@ -3,6 +3,7 @@ import { LoginContext, useLoginContext } from "../../context/LoginContext";
 import { Link } from "react-router-dom";
 
 
+
 const LoginScreen = () => {
   const { login } = useLoginContext(LoginContext);
 
@@ -31,7 +32,7 @@ const LoginScreen = () => {
         <div className="flex flex-col justify-center items-center h-screen">
           <p className="font-bold text-lg mb-6">Loguearme</p>
           <form
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 "
             onSubmit={handleSubmit}
             action=""
           >
@@ -58,8 +59,12 @@ const LoginScreen = () => {
             </button>
             
           </form>
+
+          {/* <button onClick={googleLogin} className="p-2 border w-full font-bold shadow-md bg-blue-400 hover:bg-blue-500 text-white rounded-md">
+              Ingresar con Google
+            </button> */}
           <Link to={"/register"}>
-            <p className="text-blue-500 font-semibold p-2">Crea tu cuenta</p>
+            <p className="text-blue-500 font-semibold p-2 underline">Crea tu cuenta</p>
           </Link>
         </div>
       </div>

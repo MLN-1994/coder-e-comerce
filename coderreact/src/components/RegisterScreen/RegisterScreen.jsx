@@ -60,7 +60,7 @@ const RegisterScreen = () => {
           </form>
 
           <Link to={"/login"}>
-            <p className="text-blue-500 font-semibold p-2">Ya tengo una cuenta</p> 
+            <p className="text-blue-500 font-semibold p-2 underline">Ya tengo una cuenta</p> 
           </Link>
         </div>
       </div>
