@@ -8,6 +8,7 @@ import Contact from "../components/Contact/Contact";
 import LoginScreen from "../components/LoginScreen/LoginScreen";
 import RegisterScreen from "../components/RegisterScreen/RegisterScreen";
 import Checkout from "../components/Checkout/Checkout";
+// import Footer from "../components/Footer/Footer";
 
 const AppRouter = () => {
   const { user } = useLoginContext();
@@ -35,6 +36,8 @@ const AppRouter = () => {
           <Route exact path="/login" element={<LoginScreen />} />
         </Routes>
       )}
+
+      {/* <Footer/> */}
     </BrowserRouter>
   );
 };
