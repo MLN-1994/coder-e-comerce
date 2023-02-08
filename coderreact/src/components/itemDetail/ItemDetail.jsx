@@ -29,8 +29,8 @@ const ItemDetail = ({ id, name, description, image, price, stock }) => {
     <>
       <BackButton />
 
-      <div className="flex h-screen items-center justify-center">
-        <div className="w-3/12 border grid grid-cols-12 rounded-md shadow-md">
+      <div className="flex  md:items-center justify-center ">
+        <div className="md:w-3/12 border grid grid-cols-12 rounded-md shadow-md">
           <div className="col-span-12 p-4">
             <div className="flex justify-center">
               <p className="text-xl font-bold mb-2">{name}</p>

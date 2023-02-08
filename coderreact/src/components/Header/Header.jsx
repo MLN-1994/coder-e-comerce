@@ -28,17 +28,17 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full  py-4 px-12 flex  shadow-md">
-      <div className="">
+    <div className="w-full  py-4  px-12 flex shadow-md flex-wrap xs:flex-col justify-center gap-7  ">
+      <div className="xs:mb-4">
         <Link to="/">
-          <h1 className="font-semibold text-neutral-900 text-3xl">
+          <h1 className="font-semibold text-neutral-900 text-3xl ">
             Mercado Flaco
           </h1>
         </Link>
       </div>
-      <div className="flex justify-center items-center flex-grow">
+      <div className="flex justify-center items-center md:flex-grow">
         <select
-          className="bg-white p-2 rounded-md shadow-md text-gray-700 font-medium leading-5 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-50 active:text-gray-800 flex  items-center"
+          className="bg-white p-2  rounded-md shadow-md text-gray-700 font-medium leading-5 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-50 active:text-gray-800 flex  items-center"
           onChange={(event) => handleChangeCategory(event)}
           name=""
           id=""
