@@ -35,10 +35,10 @@ const Cart = () => {
                   <img className="w-12" src={item.image} alt="" />
                 </div>
                 <div className="col-start-6">
-                  <p className="font-light">Cantidad: {item.productCount}</p>
+                  <p className="font-light">{item.productCount}</p>
                 </div>
                 <p className="font-semibold col-start-8">
-                  Total a pagar: $ {item.price * item.productCount}
+                  $ {item.price * item.productCount}
                 </p>
                 <div className="col-start-12 ">
                   <button onClick={() => removeItem(item.id)} className="">
